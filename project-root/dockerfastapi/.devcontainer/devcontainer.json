@@ -1,0 +1,21 @@
+
+
+{
+  "name": "FastAPI Docker Development",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "fastapi-app",
+  "workspaceFolder": "/app",
+  "features": {
+    "docker-in-docker": "latest"
+  },
+  "extensions": ["ms-python.python"],
+  "settings": {
+    "python.defaultInterpreterPath": "/usr/local/bin/python"
+  },
+  "appPort": [8000],
+  "runServices": ["fastapi-app"],
+  "remoteUser": "root"
+}
+
